@@ -1,0 +1,138 @@
+/* css reset */
+* {
+  font-family: "Microsoft Yahei UI","Microsoft YaHei",Helvetica,Arial,SimHei,"\5B8B\4F53",simsun,sans-serif; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #eee;
+  color: #555;
+  font-size: 14px;
+  font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+td, th, caption {
+  font-size: 14px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+a {
+  color: #555;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+img {
+  border: none; }
+
+ol, ul, li {
+  list-style: none; }
+
+input, textarea, select, button {
+  font: 14px Verdana,Helvetica,Arial,sans-serif; }
+
+table {
+  border-collapse: collapse; }
+
+html {
+  overflow-y: scroll; }
+
+/* css common */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  *zoom: 1; }
+
+input, textarea {
+  -webkit-appearance: none; }
+
+[class*="border-"] {
+  position: relative;
+  background-repeat: no-repeat; }
+
+.border-top {
+  background-size: 100% 1px;
+  background-position: top;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), color-stop(50%, red), color-stop(50%, transparent));
+  background-image: -webkit-linear-gradient(top, red, red 50%, transparent 50%);
+  background-image: linear-gradient(180deg, red, red 50%, transparent 50%); }
+
+.border-right {
+  background-size: 1px 100%;
+  background-position: right;
+  background-image: -webkit-gradient(linear, right top, left top, from(red), color-stop(50%, red), color-stop(50%, transparent));
+  background-image: -webkit-linear-gradient(right, red, red 50%, transparent 50%);
+  background-image: linear-gradient(270deg, red, red 50%, transparent 50%); }
+
+.border-bottom {
+  background-size: 100% 1px;
+  background-position: bottom;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(red), color-stop(50%, red), color-stop(50%, transparent));
+  background-image: -webkit-linear-gradient(bottom, red, red 50%, transparent 50%);
+  background-image: linear-gradient(0deg, red, red 50%, transparent 50%); }
+
+.border-left {
+  background-size: 1px 100%;
+  background-position: left;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(50%, red), color-stop(50%, transparent));
+  background-image: -webkit-linear-gradient(left, red, red 50%, transparent 50%);
+  background-image: linear-gradient(90deg, red, red 50%, transparent 50%); }
+
+.border-left-right {
+  background-size: 1px 100%;
+  background-position: left, right;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(50%, red), color-stop(50%, transparent)), -webkit-gradient(linear, right top, left top, from(red), color-stop(50%, red), color-stop(50%, transparent));
+  background-image: -webkit-linear-gradient(left, red, red 50%, transparent 50%), -webkit-linear-gradient(right, red, red 50%, transparent 50%);
+  background-image: linear-gradient(90deg, red, red 50%, transparent 50%), linear-gradient(270deg, red, red 50%, transparent 50%); }
+
+.border-top-bottom {
+  background-size: 100% 1px;
+  background-position: top, bottom;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), color-stop(50%, red), color-stop(50%, transparent)), -webkit-gradient(linear, left bottom, left top, from(red), color-stop(50%, red), color-stop(50%, transparent));
+  background-image: -webkit-linear-gradient(top, red, red 50%, transparent 50%), -webkit-linear-gradient(bottom, red, red 50%, transparent 50%);
+  background-image: linear-gradient(180deg, red, red 50%, transparent 50%), linear-gradient(0deg, red, red 50%, transparent 50%); }
+
+[class*="border-radius"]:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 200%;
+  height: 200%;
+  border: 1px solid red;
+  -webkit-transform: scale(0.5) translate3d(-50%, -50%, 0);
+          transform: scale(0.5) translate3d(-50%, -50%, 0);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.border-radius-middle {
+  border-radius: .5rem; }
+
+.border-radius-middle:after {
+  border-radius: 1rem; }
+
+.border-radius-small {
+  border-radius: .25rem; }
+
+.border-radius-small:after {
+  border-radius: .5rem; }
+
+.border-radius-min {
+  border-radius: .125rem; }
+
+.border-radius-min:after {
+  border-radius: .25rem; }
